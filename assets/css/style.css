@@ -32,6 +32,9 @@ body{
     background-color: #B6522A;
     color: #151412;
 }
+.card-content{
+    min-height: 150px;
+}
 
     /* color palatte:
     Screen #C5C1C0
