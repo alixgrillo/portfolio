@@ -26,6 +26,24 @@ h1{
 h2{
     text-shadow: 2px 2px #151412;
 }
+.card .card-image .card-title{
+    text-shadow:
+		-1px -1px 0 #151412,
+		1px -1px 0 #151412,
+		-1px 1px 0 #151412,
+		1px 1px 0 #151412;
+    color: #E8BA93;
+    font-weight: 300;
+}
+.card .card-content p{
+    color: #92604D;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: #92604D; 
+}
+.card .card-action a:hover{
+    color: #B6522A; 
+}
 #name{
     color:#151412;
 }
