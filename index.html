@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <!-- Slick Css -->
@@ -12,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+
 
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
@@ -28,9 +31,10 @@
         <div class="nav-wrapper">
             <!-- <a href="#" class="brand-logo">Logo</a> -->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#aboutMeDiv">About Me</a></li>
-                <li><a href="#portfolioDiv">Portfolio</a></li>
-                <li><a href="#contactDiv">Contact Me</a></li>
+                <li><a href="#landingPage">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
     </nav>
@@ -39,22 +43,45 @@
     <div id='backgroundImg'></div>
     <div class="container">
         <div class="row" id="landingPage">
-            <h1>Alix Grillo</h1>
+            <h1>Hi! I'm <span id="name">Alix Grillo</span></h1>
+            <p id="title">Web Developer from Golden, CO</p>
+            <div class="socialMedia">
+                <button class="btn waves-effect waves-light" id="hireme">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Hire Me
+                </button>
+                <button class="btn waves-effect waves-light" id="download">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Download Resume
+                </button>
+                <button class="btn waves-effect waves-light" id="github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    Github
+                </button>
+                <button class="btn waves-effect waves-light" id="linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    LinkedIn
+                </button>
+            </div>
         </div>
-        <div class="row" id="aboutMeDiv">
-            <h2>About me</h2>
-            <img id="profilePic" src="assets/images/pic.jpg" alt="Alix Grillo">
-            <p>Alix Grillo is a web Developer with data science and business analyst experience adept at solving problems 
-                and implementing complicated configurations. Skills in HTML, CSS and Javascript and 
-                strengths in communicating both technical and non-technical aspects and maintaining a 
-                positive attitude that infects team morale. Overcame obstacles in completing published 
-                novel approach to hybrid simulation and heuristic approach to airport operations problem 
-                while completing MSc at the University of Edinburgh. Successfully drove an administration 
-                conversion project completion, including requirements design and testing, for 18,000 life 
-                insurance policies totaling $13bn of assets. Passionate about leveraging my previous 
-                experience to help companies build a web platform on which they can provide a service to their clients.</p> 
-               <p>Alix has experience in:</p> 
-               <div class="row" id=languages>
+        <div class="sections" id='about'>
+            <div class="row" id="aboutMeDiv">
+                <h2>About me</h2>
+                <img id="profilePic" src="assets/images/pic.jpg" alt="Alix Grillo">
+                <p>Alix Grillo is a web Developer with data science and business analyst experience adept at solving
+                    problems
+                    and implementing complicated configurations. Skills in HTML, CSS and Javascript and
+                    strengths in communicating both technical and non-technical aspects and maintaining a
+                    positive attitude that infects team morale. Overcame obstacles in completing published
+                    novel approach to hybrid simulation and heuristic approach to airport operations problem
+                    while completing MSc at the University of Edinburgh. Successfully drove an administration
+                    conversion project completion, including requirements design and testing, for 18,000 life
+                    insurance policies totaling $13bn of assets. Passionate about leveraging my previous
+                    experience to help companies build a web platform on which they can provide a service to their
+                    clients.
+                </p>
+                <p>Alix has experience in:</p>
+                <div class="row" id=languages>
                     <div class="col s6">
                         <ul>
                             <li>HTML</li>
@@ -71,123 +98,132 @@
                             <li>Tableau</li>
                         </ul>
                     </div>
-               </div>
+                </div>
+            </div>
         </div>
-        <div class="row" id="portfolioDiv">
-            <h2>Portfolio</h2>
-            <div class="portfolio-carousel">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/images/kira-auf-der-heide-IPx7J1n_xUc-unsplash.jpg">
-                                <span class="card-title">GIF-TING</span>
-                                <a class="btn-floating halfway-fab waves-effect"><i
-                                        class="material-icons">arrow_forward</i></a>
-                            </div>
-                            <div class="card-content">
-                                <p>Organize your holiday gift lists in a fun way and search for great gift
-                                    ideas while you're at it.
-                                    
-                                </p>
-                            </div>
-                            <div class="card-action hoverable">
-                                <a href="https://stacyholtz6.github.io/Gif-ting/" target="_blank">Visit site</a>
-                                <a href="https://github.com/stacyholtz6/Gif-ting" target="_blank">Github Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/images/ruby-schmank-plun-i022rk-unsplash.jpg">
-                                <span class="card-title">Animals GIFs</span>
-                                <a class="btn-floating halfway-fab waves-effect"><i
-                                        class="material-icons">arrow_forward</i></a>
-                            </div>
-                            <div class="card-content">
-                                <p>Want to find the best GIFs of your favorite animals?
-                                </p>
-                            </div>
-                            <div class="card-action hoverable">
-                                <a href="https://alixgrillo.github.io/giphy-api/" target="_blank">Visit site</a>
-                                <a href="https://github.com/alixgrillo/giphy-api" target="_blank">Github Repository</a>
+        <div class="sections" id='portfolio'>
+            <div class="row" id="portfolioDiv">
+                <h2>Portfolio</h2>
+                <div class="portfolio-carousel">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/kira-auf-der-heide-IPx7J1n_xUc-unsplash.jpg">
+                                    <span class="card-title">GIF-TING</span>
+                                    <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a>
+                                </div>
+                                <div class="card-content">
+                                    <p>Organize your holiday gift lists in a fun way and search for great gift
+                                        ideas while you're at it.
+
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://stacyholtz6.github.io/Gif-ting/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/stacyholtz6/Gif-ting" target="_blank">Github
+                                        Repository</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/images/artem-maltsev-3n7DdlkMfEg-unsplash.jpg">
-                                <span class="card-title">Harry Potter Random Number Game</span>
-                                <a class="btn-floating halfway-fab waves-effect"><i
-                                        class="material-icons">arrow_forward</i></a>
-                            </div>
-                            <div class="card-content">
-                                <p>Want to battle the houses of Hogwarts? Try your luck in this game of chance
-                                    in which one house battles the rest!
-                                </p>
-                            </div>
-                            <div class="card-action hoverable">
-                                <a href="https://alixgrillo.github.io/unit-4-game/" target="_blank">Visit site</a>
-                                <a href="https://github.com/alixgrillo/unit-4-game" target="_blank">Github Repository</a>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/ruby-schmank-plun-i022rk-unsplash.jpg">
+                                    <span class="card-title">Animals GIFs</span>
+                                    <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a>
+                                </div>
+                                <div class="card-content">
+                                    <p>Want to find the best GIFs of your favorite animals?
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://alixgrillo.github.io/giphy-api/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/giphy-api" target="_blank">Github
+                                        Repository</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="assets/images/jeremy-yap-J39X2xX_8CQ-unsplash.jpg">
-                                <span class="card-title">Cinema Trivia</span>
-                                <a class="btn-floating halfway-fab waves-effect"><i
-                                        class="material-icons">arrow_forward</i></a>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/artem-maltsev-3n7DdlkMfEg-unsplash.jpg">
+                                    <span class="card-title">Harry Potter Random Number Game</span>
+                                    <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a>
+                                </div>
+                                <div class="card-content">
+                                    <p>Want to battle the houses of Hogwarts? Try your luck in this game of chance
+                                        in which one house battles the rest!
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://alixgrillo.github.io/unit-4-game/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/unit-4-game" target="_blank">Github
+                                        Repository</a>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <p>Think you know movies? Test your knowledge with this movie trivia game. But make
-                                    sure you answer quickly, there is a time limit!
-                                </p>
-                            </div>
-                            <div class="card-action hoverable">
-                                <a href="https://alixgrillo.github.io/TriviaGame/" target="_blank">Visit site</a>
-                                <a href="https://github.com/alixgrillo/TriviaGame" target="_blank">Github Repository</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/jeremy-yap-J39X2xX_8CQ-unsplash.jpg">
+                                    <span class="card-title">Cinema Trivia</span>
+                                    <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a>
+                                </div>
+                                <div class="card-content">
+                                    <p>Think you know movies? Test your knowledge with this movie trivia game. But make
+                                        sure you answer quickly, there is a time limit!
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://alixgrillo.github.io/TriviaGame/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/TriviaGame" target="_blank">Github
+                                        Repository</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" id="contactDiv">
-            <h2>Contact Me</h2>
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="contact-name" type="text" class="validate">
-                        <label for="contact-name">Name</label>
+        <div class="sections" id='contact'>
+            <div class="row" id="contactDiv">
+                <h2>Contact Me</h2>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="contact-name" type="text" class="validate">
+                            <label for="contact-name">Name</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="contact-email" type="text" class="validate">
-                        <label for="contact-email">Email</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="contact-email" type="text" class="validate">
+                            <label for="contact-email">Email</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">message</i>
-                        <input id="contact-message" type="text" class="validate">
-                        <label for="contact-message">Message</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <input id="contact-message" type="text" class="validate">
+                            <label for="contact-message">Message</label>
+                        </div>
                     </div>
-                </div>
-                <a class="btn"><i class="material-icons right">check_circle</i>Submit</a>
-            </form>
+                    <a class="btn"><i class="material-icons right">send</i>Submit</a>
+                </form>
+            </div>
         </div>
     </div>
 
