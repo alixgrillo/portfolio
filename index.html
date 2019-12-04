@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 
 
+
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
 
@@ -44,8 +45,10 @@
     <div id='backgroundImg'></div>
     <div class="container">
         <div class="row" id="landingPage">
-            <h1>Hi! I'm <span id="name">Alix Grillo</span></h1>
-            <p id="title">Web Developer from Golden, CO</p>
+            <h1>Alix <span id="name">Grillo</span></h1>
+            <p id="title">Web <span id="titleSub">Developer</span> from Golden, CO</p>
+            <p class="contactInfo">Phone Number: 303.829.0672</p>
+            <p class="contactInfo">Email: alix.grillo2@gmail.com</p>
             <div class="socialMedia">
                 <button class="btn waves-effect waves-light" id="hireme">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -64,6 +67,7 @@
                     LinkedIn
                 </button>
             </div>
+
         </div>
         <div class="sections" id='about'>
             <div class="row" id="aboutMeDiv">
@@ -83,22 +87,24 @@
                 </p>
                 <p>Alix has experience in:</p>
                 <div class="row" id=languages>
-                    <div class="col s6">
-                        <ul>
+
+                    <ul>
+                        <div class="col s3">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Javascript</li>
                             <li>JQuery</li>
-                        </ul>
-                    </div>
-                    <div class="col s6">
-                        <ul>
+                            <!-- </ul> -->
+                        </div>
+                        <div class="col s3">
+                            <!-- <ul> -->
                             <li>C#</li>
                             <li>Python</li>
                             <li>Java</li>
                             <li>Tableau</li>
-                        </ul>
-                    </div>
+                        </div>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -199,6 +205,12 @@
             </div>
         </div>
         <div class="sections" id='contact'>
+            <!-- validation modal for form -->
+            <div class="modal" id="validation-modal">
+                <div class="modal-content">
+                    <p class="error">Please provide your name and email so that I know how to respond.</p>
+                </div>
+            </div>
             <div class="row" id="contactDiv">
                 <h2>Contact Me</h2>
                 <form class="col s12">
@@ -212,7 +224,7 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">email</i>
-                            <input id="contact-email" type="text" class="validate">
+                            <input id="contact-email" type="email" class="validate">
                             <label for="contact-email">Email</label>
                         </div>
                     </div>
@@ -223,11 +235,12 @@
                             <label for="contact-message">Message</label>
                         </div>
                     </div>
-                    <a class="btn"><i class="material-icons right">send</i>Submit</a>
+                    <a class="btn" id="contact-submit"><i class="material-icons right">send</i>Submit</a>
                 </form>
             </div>
         </div>
     </div>
+
 
 
     <!-- jquery -->
@@ -236,6 +249,12 @@
     <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
     <!-- Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
 
     <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 </body>

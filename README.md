@@ -9,3 +9,9 @@ Photo by Artem Maltsev on Unsplash (harry potter)
 Photo by Ruby Schmank on Unsplash (animals gif)
 
 Photo by Jeremy Yap on Unsplash (movie trivia)
+
+
+
+Photo by Tomasz Frankowski on Unsplash (conveyor)
+
+Photo by Luca Bravo on Unsplash (code on computer)

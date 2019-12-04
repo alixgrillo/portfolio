@@ -53,10 +53,20 @@ h2{
     text-shadow: 2px 2px #636C6A;
     text-align: center;
 }
+#titleSub{
+    color:#E8BA93;
+}
+.contactInfo{
+    color:#151412;
+    font-size: 20px;
+    text-shadow: 1px 1px #E8BA93;
+    text-align: center;
+    font-weight: bold;
+}
 #backgroundImg{
     background-image: url("../images/alex-knight-j4uuKnN43_M-unsplash.jpg");
     background-size: cover;
-    opacity:0.5;
+    opacity:0.7;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -114,7 +124,8 @@ input:focus{
     border-bottom: 1px solid #B6522A;
     box-shadow: 0 1px 0 0 #B6522A;
 }
-input[type=text]:not(.browser-default):focus:not([readonly])+label{
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label{
     
     color: #E8BA93;
 }
@@ -143,7 +154,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
   -webkit-box-shadow: 0 1px 0 0 #E8BA93;
           box-shadow: 0 1px 0 0 #E8BA93;
 }
-
+.input-field input[type=text].valid,
+.input-field input[type=email].valid{
+    border-bottom: 1px solid #E8BA93;
+    box-shadow: 0 1px 0 0 #E8BA93;
+}
     /* color palatte:
     Screen #C5C1C0
     Steel #0A1612
