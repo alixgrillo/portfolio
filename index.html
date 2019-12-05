@@ -3,12 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <!-- Slick Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
@@ -22,8 +27,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Alix Grillo</title>
 </head>
 
@@ -31,6 +35,24 @@
 
     <nav>
         <div class="nav-wrapper">
+            <div class="socialMedia left hide-on-med-and-down">
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="Hire me!"
+                    id="hireme">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom"
+                    data-tooltip="Download Resume" id="download">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom"
+                    data-tooltip="GitHub Profile" id="github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="LinkedIn"
+                    id="linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </button>
+            </div>
             <!-- <a href="#" class="brand-logo">Logo</a> -->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#landingPage">Home</a></li>
@@ -38,36 +60,26 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class=material-icons>menu</i>
+            </a>
         </div>
     </nav>
-
+    <ul class="sidenav" id="mobile-nav">
+            <li><a href="#landingPage">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href='assets/documents/cv-Alexandra_Clare.pdf' target="_blank">Download Resume</a></li>
+            <li><a href='https://github.com/alixgrillo' target="_blank">GitHub Profile</a></li>
+            <li><a href='https://www.linkedin.com/in/alixclare/' target="_blank">LinkedIn</a></li>
+    </ul>
 
     <div id='backgroundImg'></div>
     <div class="container">
         <div class="row" id="landingPage">
             <h1>Alix <span id="name">Grillo</span></h1>
             <p id="title">Web <span id="titleSub">Developer</span> from Golden, CO</p>
-            <p class="contactInfo">Phone Number: 303.829.0672</p>
-            <p class="contactInfo">Email: alix.grillo2@gmail.com</p>
-            <div class="socialMedia">
-                <button class="btn waves-effect waves-light" id="hireme">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    Hire Me
-                </button>
-                <button class="btn waves-effect waves-light" id="download">
-                    <i class="fa fa-download" aria-hidden="true"></i>
-                    Download Resume
-                </button>
-                <button class="btn waves-effect waves-light" id="github">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Github
-                </button>
-                <button class="btn waves-effect waves-light" id="linkedin">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    LinkedIn
-                </button>
-            </div>
-
         </div>
         <div class="sections" id='about'>
             <div class="row" id="aboutMeDiv">
@@ -213,6 +225,9 @@
             </div>
             <div class="row" id="contactDiv">
                 <h2>Contact Me</h2>
+                <h5>Please complete the information below and I will get back to you or you can contact me directly:</h5>
+                <p class="contactInfo">Phone Number: 303.829.0672</p>
+                <p class="contactInfo">Email: alix.grillo2@gmail.com</p>
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
@@ -246,7 +261,8 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/javascript/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->

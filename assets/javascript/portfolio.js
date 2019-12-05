@@ -15,6 +15,16 @@ var database = firebase.database();
 
 $(document).ready(function(){
     $('.modal').modal();
+    $('.tooltipped').tooltip();
+    $('.sidenav').sidenav();
+    $(".btn").click(function () {
+        switch (this.id) {
+            case 'download': window.open('assets/documents/cv-Alexandra_Clare.pdf'); break;
+            case 'github': window.open('https://github.com/alixgrillo'); break;
+            case 'linkedin': window.open('https://www.linkedin.com/in/alixclare/'); break;
+            case 'hireme': window.location.href = "#contact"; break;
+        }
+    });
   });
 
 $('.portfolio-carousel').slick({
@@ -30,16 +40,16 @@ $('.portfolio-carousel').slick({
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: false
+                dots: true
             }
         },
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
@@ -53,16 +63,16 @@ $('.portfolio-carousel').slick({
     ]
 });
 
-$(document).ready(function () {
-    $(".btn").click(function () {
-        switch (this.id) {
-            case 'download': window.open('assets/documents/cv-Alexandra_Clare.pdf'); break;
-            case 'github': window.open('https://github.com/alixgrillo'); break;
-            case 'linkedin': window.open('https://www.linkedin.com/in/alixclare/'); break;
-            case 'hireme': window.location.href = "#contact"; break;
-        }
-    });
-})
+// $(document).ready(function () {
+//     $(".btn").click(function () {
+//         switch (this.id) {
+//             case 'download': window.open('assets/documents/cv-Alexandra_Clare.pdf'); break;
+//             case 'github': window.open('https://github.com/alixgrillo'); break;
+//             case 'linkedin': window.open('https://www.linkedin.com/in/alixclare/'); break;
+//             case 'hireme': window.location.href = "#contact"; break;
+//         }
+//     });
+// })
 
 
 
