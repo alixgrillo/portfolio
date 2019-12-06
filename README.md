@@ -36,7 +36,7 @@ the various sections of the page.
 
 ### About Me
 
-<img src="/assets/images/about-me.PNG">
+<img src="/assets/images/about-me.png">
 
 ### Portfolio
 The portfolio section utilizes a Slick Carousel that rotates every 5 seconds automatically. These are not
