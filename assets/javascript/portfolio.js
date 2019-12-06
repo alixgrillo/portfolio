@@ -87,7 +87,7 @@ $(document).on("click", "#contact-submit", function (event) {
     console.log(typeof $("#contact-name").val().trim());
 
     if (name === "" || email == "") {
-        $('.modal').modal('open');
+        $('#validation-modal').modal('open');
     } else {
         database.ref().push({
             name: name,
@@ -95,10 +95,12 @@ $(document).on("click", "#contact-submit", function (event) {
             message: message,
             timestamp: firebase.database.ServerValue.TIMESTAMP
        })
+       $('#confirmation-modal').modal('open');
     }
 
     $("#contact-name").val("");
     $("#contact-email").val("");
     $("#contact-message").val("");
 
+    
 })
